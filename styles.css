@@ -2,6 +2,11 @@ body {
     background-color: pink;
 }
 
-canvas {
-    border: 1px solid black; 
+#canvas {
+    border: 1px solid black;
+    cursor: url('/cursor-round.png'), auto;
+}
+
+.btn-group {
+    display: inline-block;
 }

@@ -39,8 +39,13 @@ function stopPos() {
 }
 
 addEventListener('mousedown', startPos);
+addEventListener('touchstart', startPos);
+
 addEventListener('mouseup', stopPos);
+addEventListener('touchend', stopPos)
+
 addEventListener('mousemove', draw);
+addEventListener('touchmove', draw);
 
 function draw(e) {
     if (!isDrawing) {
@@ -68,9 +73,3 @@ document.querySelector('#erase-btn').addEventListener("click",() => {
 document.querySelector('#pen-btn').addEventListener("click", () => {
     ctx.strokeStyle = currentColor;
 })
-
-    
-
- 
-
-
